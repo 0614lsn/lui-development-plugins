@@ -167,5 +167,7 @@ regression sanity，并标明代码变化后必须重跑的受影响测试，用
 - 完成判据写成「命令 + 预期输出」，implementer 照跑即可自测，避免主观判断。
 - 完成判据引用文件集 / 文件树时写「与枚举逐项对照」，不另写总数数字—— 枚举与计数并存必生笔误，以枚举为准。
 - plan 获批后如需 plan 外工作：先把新 task 章节写进 plan（或转 TODO），再动手。
+- 交付物运行于 launchd / cron / CI 等非交互环境时，预检与演练必须在目标进程链内
+  完成，以其 env / PATH / 权限为准；交互 shell 的结果不能替代，缺硬依赖应阻断。
 - implementer 不勾 task checkbox。主控只在 implementer 交还写入权、自测合格后，把 payload、必要使用文档和对应状态一起精确暂存为原子 task commit；commit 失败不得留下已完成 checkbox。并行 task 的 commit 随后按 plan 顺序串行集成。
 - 流程语义 task 收口前必须核对权威 SKILL、关联模板和活动 adapter；扫描范围只含活动文件，历史文档作为显式白名单保留。

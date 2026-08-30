@@ -8,8 +8,9 @@ description: Use when turning a requirement into an approved LDP plan plus a goa
 本 skill 是 LDP 阶段 0–1 的规划与 goal 交接件：把一句话需求组织成「调研 → 批量
 澄清 → 隔离 → 写 plan → plan 闸门 → 输出 goal 启动指令」，让一个无人值守的执行
 会话能拿着获批 plan 独立跑完余下阶段。它挂在 LDP 阶段 0–1 前端，不新增 LDP 阶段、
-不接管状态机，也不复制 LDP 或项目绑定（如 mars-loop）的正文——流程骨架、角色
-合同、闸门与终审语义只引用 `ldp` skill 及适用的项目绑定，本文件只写差量。
+不接管状态机，也不复制 LDP 或项目绑定（模式见 `project-loop` skill）的正文——
+流程骨架、角色合同、闸门与终审语义只引用 `ldp` skill 及适用的项目绑定，本文件
+只写差量。
 
 **产出物就是 LDP plan，不另建任务说明书**：plan 已承载说明书的全部纪律（预裁决、
 预授权、验收、测试、Red Flags），goal 启动指令只是指向该 plan 的「指针 + 停止
@@ -25,8 +26,8 @@ leader 的需求照常直接走 LDP。plan 与 goal / leader 互不绑定——L
 - **用户**：出需求并拍板——回答批量澄清、批准 plan、决定是否走无人值守。
 - **leader 会话**（执行本 skill 的会话）：调研、批量澄清、按 LDP 阶段 0 隔离、
   写 plan、过 plan 闸门、输出 goal 启动指令并交接；交接后停止写入。
-- **执行会话**（goal 模式）：按 plan + LDP（及适用的项目绑定，如 mars-loop）从
-  阶段 2 接续跑到阶段 5；中途没人可问，故障按 plan「运行时故障策略」处置。
+- **执行会话**（goal 模式）：按 plan + LDP（及适用的项目绑定）从阶段 2 接续跑到
+  阶段 5；中途没人可问，故障按 plan「运行时故障策略」处置。
 
 ## 流程（六步）
 
