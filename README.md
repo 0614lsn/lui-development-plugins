@@ -1,6 +1,6 @@
 # LUI Development Plugins (LDP)
 
-`LDP` 是我自研的三层五阶段通用开发插件，内部包含7个 skill 和 3个模板，编排「一个开发需求从立项到合并到
+`LDP` 是我自研的三层五阶段通用开发插件，内部包含 8 个 skill 和 3 个模板，编排「一个开发需求从立项到合并到
 收尾」的完整闭环。不含 hooks，无 session-start 强注入。内核不绑定具体 coding agent
 或项目；宿主只通过薄 adapter 负责发现 skill、派发独立 subagent 与呈现 plan 闸门。
 
@@ -16,7 +16,7 @@
 subagent 上下文。agent 类型、model 与 effort 由宿主原生 orchestrator 按任务选择，
 LDP 不固定具体值，也不要求子任务配置与父任务相同或不同；subagent 禁止再嵌套派发。
 
-## 七个 skill
+## 八个 skill
 
 | skill                                              | 角色          | 何时启用                                                    |
 | -------------------------------------------------- | ----------- | ------------------------------------------------------- |
@@ -27,6 +27,7 @@ LDP 不固定具体值，也不要求子任务配置与父任务相同或不同�
 | [`self-evolution`](skills/self-evolution/SKILL.md) | 阶段 5b 默认组件  | 收尾复盘、提案落盘与异步 review                                     |
 | [`neat-freak`](skills/neat-freak/SKILL.md)         | 阶段 5c 默认组件  | 收尾六面审计与清场；或用户明确发起的独立「大扫除」审计                             |
 | [`leader`](skills/leader/SKILL.md)                 | 阶段 0–1 可选前端 | 需求要走 goal / 无人值守执行时，把需求整理成获批 plan + goal 启动指令           |
+| [`readme-writer`](skills/readme-writer/SKILL.md)   | README 专项组件   | 创建、改写或审查 README；只保留读者核心任务所需且可验证的内容                       |
 
 ## 五阶段一览
 
@@ -77,7 +78,7 @@ claude --plugin-dir <repo>
 ### 独立 skill
 
 Codex 或不需要插件版本管理的 Claude Code，也可把 `skills/` 下的目录装入宿主的 skill
-发现路径（七个 skill 可按需全装或只装核心 `ldp`）：
+发现路径（八个 skill 可按需全装或只装核心 `ldp`）：
 
 - **Codex**：装入 `~/.agents/skills/`（或 `~/.codex/skills/`，按本机约定）。
 - **Claude Code**：装入 `~/.claude/skills/`。

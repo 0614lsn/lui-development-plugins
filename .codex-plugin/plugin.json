@@ -1,6 +1,6 @@
 {
   "name": "lui-development-plugins",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "通用五阶段开发闭环引擎：plan 闸门 → subagent 开发 → 测试与 report → 终审合并 → 知识沉淀 / 自进化 / 审计清场",
   "author": {
     "name": "lui"
@@ -17,14 +17,15 @@
   "interface": {
     "displayName": "LUI Development Plugins (LDP)",
     "shortDescription": "五阶段开发闭环引擎与项目绑定组件",
-    "longDescription": "LDP 五阶段开发闭环引擎：feature 分支隔离、单次 plan 人工闸门、独立 subagent 开发、Candidate 验证与自动终审、知识沉淀 / 自进化 / 审计清场；附项目绑定（project-loop）与外部通道注册表（connectors）模式。",
+    "longDescription": "LDP 五阶段开发闭环引擎：feature 分支隔离、单次 plan 人工闸门、独立 subagent 开发、Candidate 验证与自动终审、知识沉淀 / 自进化 / 审计清场；附项目绑定、外部通道注册表与精简 README 写作组件。",
     "developerName": "lui",
     "category": "Productivity",
     "capabilities": ["Interactive", "Write"],
     "defaultPrompt": [
       "用 LDP 流程实现这个需求：先批量澄清，再写 plan 过闸门",
       "把我的项目绑定到 LDP：声明作用域、连接器与收尾去处",
-      "任务收尾：跑一遍六面审计并按预授权清场"
+      "任务收尾：跑一遍六面审计并按预授权清场",
+      "精简并规范这个项目的 README，只保留可验证且读者真正需要的信息"
     ]
   }
 }

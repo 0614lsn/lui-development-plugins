@@ -2,7 +2,7 @@
   "name": "lui-development-plugins",
   "displayName": "LUI Development Plugins (LDP)",
   "description": "通用五阶段开发闭环：plan 闸门 → subagent 开发 → 测试与 report → 终审合并 → 知识沉淀 / 自进化 / 审计清场",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "lui"
   },

@@ -146,6 +146,7 @@ push（或本地合并）完成后按固定顺序执行 5a → 5b → 5c，三�
 - `neat-freak`：阶段 5c 的收尾审计与清场件。
 - `connectors`：外部资源通道注册表的模式与纪律，供项目绑定声明连接器与人工通道。
 - `project-loop`：把 LDP 绑定到具体项目的 L2 模式（作用域、路由与通用不变量）。
+- `readme-writer`：README 创建、改写与专项审查件；仅在需求触及 README 时按需启用。
 
 LDP 与项目无关；项目专属信息由上层绑定（按 `project-loop` 模式编写的薄 skill）声明，包括：
 

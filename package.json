@@ -1,7 +1,7 @@
 {
   "name": "lui-development-plugins",
-  "version": "0.2.0",
-  "description": "LUI Development Plugins (LDP) — 自研通用五阶段开发闭环引擎（7 skills + 3 模板，无 hooks）",
+  "version": "0.3.0",
+  "description": "LUI Development Plugins (LDP) — 自研通用五阶段开发闭环引擎（8 skills + 3 模板，无 hooks）",
   "license": "MIT",
   "repository": "https://github.com/0614lsn/lui-development-plugins",
   "keywords": [
