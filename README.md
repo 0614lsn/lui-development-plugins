@@ -4,6 +4,20 @@ LDP 是一组面向 coding agent 的通用项目开发 skill，用一次 plan �
 开发、验证、终审与收尾。它包含 8 个 skill 和 3 个任务模板，不绑定具体项目或宿主，
 也不依赖 hooks 或 session-start 注入。
 
+## 为什么做 LDP
+
+我在使用 `superpowers`、`grill-me` 等开发插件时，发现它们对我的日常开发来说过于
+复杂。因此，我结合这些 skill 的思路和自己的开发习惯，开发了 LDP。
+
+LDP 还吸收了 `hermes-agent` 的自进化机制：每次开发任务完成后，都会在收尾阶段进行
+自进化复盘，形成可审查的改进提案。
+
+LDP 的三个核心特点：
+
+- **自动化开发**：plan 获批后，按预授权持续推进开发、验证与终审。
+- **闭环开发**：一个需求从隔离、开发到合并、知识沉淀和清场完整收口。
+- **自进化**：每次任务结束后复盘流程问题，持续改进 skill、规则和文档。
+
 ## Quick start
 
 ### Claude Code
@@ -19,16 +33,23 @@ claude plugin install lui-development-plugins@lui-development-plugins
 /lui-development-plugins:ldp 用 LDP 实现：为 CLI 增加 JSON 输出
 ```
 
-### Codex 与其他宿主
+> [!TIP]
+> 如果你已经通过 Claude Code 跑通 LDP，欢迎给 [这个仓库点个 Star ⭐](https://github.com/0614lsn/lui-development-plugins)，让更多开发者发现它。
+
+### Codex
 
 ```bash
 git clone https://github.com/0614lsn/lui-development-plugins.git
 ```
 
-将 `skills/` 下的目录安装到宿主的 skill 发现路径。完整插件包含全部 8 个 skill；
-只需要专项能力时也可单独安装。
+将 `skills/` 下的目录安装到 `~/.agents/skills/` 或 `~/.codex/skills/`。完整插件包含
+全部 8 个 skill；只需要专项能力时也可单独安装。安装后重启 Codex 或新建会话。
 
-- Codex：`~/.agents/skills/` 或 `~/.codex/skills/`
+> [!TIP]
+> 如果你已经在 Codex 中用上 LDP，欢迎给 [这个仓库点个 Star ⭐](https://github.com/0614lsn/lui-development-plugins)，让更多开发者发现它。
+
+### 其他宿主
+
 - Claude Code 独立 skill：`~/.claude/skills/`
 - Cursor：按本地插件方式加载仓库根目录（legacy adapter）
 
