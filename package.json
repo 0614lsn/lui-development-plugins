@@ -1,0 +1,10 @@
+{
+  "name": "lui-development-plugins",
+  "version": "0.1.0",
+  "description": "LUI Development Plugins (LDP) — 自研精简 L1 通用开发引擎（skills only，无 hooks）",
+  "keywords": [
+    "skills",
+    "workflow",
+    "orchestration"
+  ]
+}
