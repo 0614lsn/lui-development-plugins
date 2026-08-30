@@ -10,7 +10,7 @@
       "name": "lui-development-plugins",
       "source": ".",
       "description": "八个通用项目开发 skill 组成的五阶段开发闭环",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": {
         "name": "lui"
       },

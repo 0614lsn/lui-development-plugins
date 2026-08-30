@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "lui-development-plugins",
   "displayName": "LUI Development Plugins (LDP)",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "通用五阶段开发闭环：plan 闸门、subagent 开发、验证与终审、知识沉淀、自进化和审计清场",
   "author": {
     "name": "lui",

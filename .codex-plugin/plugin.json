@@ -1,6 +1,6 @@
 {
   "name": "lui-development-plugins",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "通用五阶段开发闭环引擎：plan 闸门 → subagent 开发 → 测试与 report → 终审合并 → 知识沉淀 / 自进化 / 审计清场",
   "author": {
     "name": "lui"
