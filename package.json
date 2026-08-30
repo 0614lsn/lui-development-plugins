@@ -1,10 +1,13 @@
 {
   "name": "lui-development-plugins",
-  "version": "0.1.0",
-  "description": "LUI Development Plugins (LDP) — 自研精简 L1 通用开发引擎（skills only，无 hooks）",
+  "version": "0.2.0",
+  "description": "LUI Development Plugins (LDP) — 自研通用五阶段开发闭环引擎（7 skills + 3 模板，无 hooks）",
+  "license": "MIT",
+  "repository": "https://github.com/0614lsn/lui-development-plugins",
   "keywords": [
     "skills",
     "workflow",
-    "orchestration"
+    "orchestration",
+    "ldp"
   ]
 }
