@@ -1,0 +1,21 @@
+{
+  "name": "lui-development-plugins",
+  "owner": {
+    "name": "lui",
+    "url": "https://github.com/0614lsn"
+  },
+  "description": "LUI Development Plugins (LDP) 的 Claude Code 插件市场",
+  "plugins": [
+    {
+      "name": "lui-development-plugins",
+      "source": ".",
+      "description": "七个通用项目开发 skill 组成的五阶段开发闭环",
+      "version": "0.2.0",
+      "author": {
+        "name": "lui"
+      },
+      "homepage": "https://github.com/0614lsn/lui-development-plugins#readme",
+      "repository": "https://github.com/0614lsn/lui-development-plugins"
+    }
+  ]
+}

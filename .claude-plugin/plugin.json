@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "lui-development-plugins",
+  "displayName": "LUI Development Plugins (LDP)",
+  "version": "0.2.0",
+  "description": "通用五阶段开发闭环：plan 闸门、subagent 开发、验证与终审、知识沉淀、自进化和审计清场",
+  "author": {
+    "name": "lui",
+    "url": "https://github.com/0614lsn"
+  },
+  "homepage": "https://github.com/0614lsn/lui-development-plugins#readme",
+  "repository": "https://github.com/0614lsn/lui-development-plugins",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "workflow",
+    "orchestration",
+    "ldp"
+  ],
+  "skills": "./skills/"
+}
